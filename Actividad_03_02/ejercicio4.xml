@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<colegio xmlns:lmsgi="http://www.lmsgi.net/document"
+	xmlns:iesnumero1 ="http://www.lmsgi.net/iesnumero1"
+	xmlns:cifpdeaviles ="http://www.lmsgi.net/cifpdeaviles"
+	xmlns:iesdoctorfleming ="http://www.lmsgi.net/iesdoctorfleming"
+	xmlns:iesbernaldodequiros ="http://www.lmsgi.net/iesbernaldodequiros"
+	xmlns:cifpectoresindustrialydeservicios  ="http://www.lmsgi.net/cifpectoresindustrialydeservicios"
+	xmlns:iessanchezlastra  ="http://www.lmsgi.net/iessanchezlastra">
+	<iesnumero1:centro localidad="Gijon">
+		<iesnumero1:alumnos>
+			<iesnumero1:alumno>
+				<iesnumero1:nombre>Ana</iesnumero1:nombre>
+				<iesnumero1:apellidos>García Pérez</iesnumero1:apellidos>
+			</iesnumero1:alumno>
+			<iesnumero1:alumno>
+				<iesnumero1:nombre>José Luis</iesnumero1:nombre>
+				<iesnumero1:apellidos>Fernández Uría</iesnumero1:apellidos>
+			</iesnumero1:alumno>
+			<iesnumero1:alumno>
+				<iesnumero1:nombre>Belén</iesnumero1:nombre>
+				<iesnumero1:apellidos>Díaz del Olmo</iesnumero1:apellidos>
+			</iesnumero1:alumno>
+			<iesnumero1:alumno>
+				<iesnumero1:nombre>Lucía</iesnumero1:nombre>
+				<iesnumero1:apellidos>Rodríguez Marqués</iesnumero1:apellidos>
+			</iesnumero1:alumno>
+			<iesnumero1:alumno>
+				<iesnumero1:nombre>Fernando</iesnumero1:nombre>
+				<iesnumero1:apellidos>Nava Domínguez</iesnumero1:apellidos>
+			</iesnumero1:alumno>
+			<iesnumero1:alumno>
+				<iesnumero1:nombre>Eva</iesnumero1:nombre>
+				<iesnumero1:apellidos>García González</iesnumero1:apellidos>
+			</iesnumero1:alumno>
+			<iesnumero1:alumno>
+				<iesnumero1:nombre>Bernardo</iesnumero1:nombre>
+				<iesnumero1:apellidos>Criado Martínez</iesnumero1:apellidos>
+			</iesnumero1:alumno>
+
+		</iesnumero1:alumnos>
+
+	</iesnumero1:centro>
+	<cifpdeaviles:centro localidad="Avilés">
+		<cifpdeaviles:alumnos>
+			<cifpdeaviles:alumno>
+				<cifpdeaviles:nombre>Luisa</cifpdeaviles:nombre>
+				<cifpdeaviles:apellidos>Martín López</cifpdeaviles:apellidos>
+			</cifpdeaviles:alumno>
+			<cifpdeaviles:alumno>
+				<cifpdeaviles:nombre>Ernesto</cifpdeaviles:nombre>
+				<cifpdeaviles:apellidos>Viejo Pérez</cifpdeaviles:apellidos>
+			</cifpdeaviles:alumno>
+		</cifpdeaviles:alumnos>
+	</cifpdeaviles:centro>
+	<iesdoctorfleming:centro localidad="Oviedo">
+		<iesdoctorfleming:alumnos>
+			<iesdoctorfleming:alumno>
+				<iesdoctorfleming:nombre>Pedro</iesdoctorfleming:nombre>
+				<iesdoctorfleming:apellidos>González Rubiera</iesdoctorfleming:apellidos>
+			</iesdoctorfleming:alumno>
+		</iesdoctorfleming:alumnos>
+	</iesdoctorfleming:centro>
+	<iesbernaldodequiros:centro localidad="Mieres">
+		<iesbernaldodequiros:alumnos>
+			<iesbernaldodequiros:alumno>
+				<iesbernaldodequiros:nombre>Clara</iesbernaldodequiros:nombre>
+				<iesbernaldodequiros:apellidos>García del Riego</iesbernaldodequiros:apellidos>
+			</iesbernaldodequiros:alumno>
+			<iesbernaldodequiros:alumno>
+				<iesbernaldodequiros:nombre>Luciano</iesbernaldodequiros:nombre>
+				<iesbernaldodequiros:apellidos>Rodríguez Nieto</iesbernaldodequiros:apellidos>
+			</iesbernaldodequiros:alumno>
+		</iesbernaldodequiros:alumnos>
+
+	</iesbernaldodequiros:centro>
+	<cifpectoresindustrialydeservicios:centro localidad="Gijon">
+		<cifpectoresindustrialydeservicios:alumnos>
+			<cifpectoresindustrialydeservicios:alumno>
+				<cifpectoresindustrialydeservicios:nombre>Javier</cifpectoresindustrialydeservicios:nombre>
+				<cifpectoresindustrialydeservicios:apellidos>Gómez Lamela</cifpectoresindustrialydeservicios:apellidos>
+			</cifpectoresindustrialydeservicios:alumno>
+			<cifpectoresindustrialydeservicios:alumno>
+				<cifpectoresindustrialydeservicios:nombre>Oscar</cifpectoresindustrialydeservicios:nombre>
+				<cifpectoresindustrialydeservicios:apellidos>Álvarez Cortés</cifpectoresindustrialydeservicios:apellidos>
+			</cifpectoresindustrialydeservicios:alumno>
+		</cifpectoresindustrialydeservicios:alumnos>
+
+	</cifpectoresindustrialydeservicios:centro>
+	<iessanchezlastra:centro localidad="Mieres">
+		<iessanchezlastra:alumnos>
+			<iessanchezlastra:alumno>
+				<iessanchezlastra:nombre>Sofía</iessanchezlastra:nombre>
+				<iessanchezlastra:apellidos>Reigal Pérez</iessanchezlastra:apellidos>
+			</iessanchezlastra:alumno>
+		</iessanchezlastra:alumnos>
+	</iessanchezlastra:centro>
+		
+</colegio>
