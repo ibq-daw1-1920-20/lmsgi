@@ -8,10 +8,14 @@
 ]>
 
 <sistemaSolar>
-<cuerpo>
-<planeta>Tierra</planeta>
-<satelite>Luna</satelite>
-<asteroide>Ceres</asteroide>
-</cuerpo>
+    <cuerpo>
+        <planeta>Tierra</planeta>
+    </cuerpo>
+    <cuerpo>
+        <satelite>Luna</satelite>
+    </cuerpo>
+    <cuerpo>
+        <asteroide>Ceres</asteroide>
+    </cuerpo>
 
 </sistemaSolar>

@@ -7,12 +7,12 @@
 ]>
 
 <marcadores>
-<marcador>
-<nombre>W3C</nombre>
-<uri>http://www.w3.org/</uri>
-</marcador>
-<marcador>
-<nombre>Web HypertextApplicationTechnologyWorkingGroup(WHATWG)</nombre>
-<uri>http://www.whatwg.org/</uri>
-</marcador>
+    <marcador>
+        <nombre>W3C</nombre>
+        <uri>http://www.w3.org/</uri>
+        </marcador>
+    <marcador>
+        <nombre>Web HypertextApplicationTechnologyWorkingGroup(WHATWG)</nombre>
+        <uri>http://www.whatwg.org/</uri>
+    </marcador>
 </marcadores>
