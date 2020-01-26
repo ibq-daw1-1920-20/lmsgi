@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resultados [
+<!ELEMENT resultados (resultado)*>
+<!ELEMENT resultado EMPTY>
+<!ATTLIST resultado local CDATA #REQUIRED>
+<!ATTLIST resultado goles CDATA #REQUIRED>
+<!ATTLIST resultado visitante CDATA #REQUIRED>
+
+
+]>
+<resultados>
+    <resultado local ="Nottingham Presa" visitante = "Inter de Mitente" goles = "1-0" />
+    <resultado local ="Vodka Juniors" visitante = "Sparta da Risa" goles = "3-2" />
+    <resultado local = "Water de Munich" visitante = "Esteaua es del grifo" goles = "4-2" />
+    
+</resultados>
