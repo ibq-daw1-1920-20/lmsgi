@@ -3,12 +3,11 @@
 <!ELEMENT inventores (inventor)*>
 <!ELEMENT inventor EMPTY>
 <!ATTLIST inventor invento CDATA #REQUIRED>
-<!ATTLIST inventor nombre ID #IMPLIED>
+<!ATTLIST inventor nombre CDATA #IMPLIED>
 ]>
 <inventores>
-    <inventor nombre="Robert_Adler" invento="Mando a distancia" />
-    <inventor nombre="Laszlo_Josef_Biro" invento="Bolígrafo" />
-    <inventor nombre="Josephine_Garis_Cochran" invento="Lavaplatos" />
-    <inventor invento="Fuego" />
-
+<inventor nombre="Robert Adler" invento="Mando adistancia" />
+<inventor nombre="Laszlo Josef Biro" invento="Bolígrafo" />
+<inventor nombre="Josephine Garis Cochran" invento="Lavaplatos" />
+<inventor invento="Fuego" />
 </inventores>
