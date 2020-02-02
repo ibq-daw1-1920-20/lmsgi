@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+<!--Defenimos los elementos simples-->
+<xs:element name="Nombre" type ="xs:string"/>
+<xs:element name="Direccion" type ="xs:string"/>
+<xs:element name="Ciudad" type ="xs:string"/>
+<xs:element name="codPostal" type ="xs:string"/>
+<xs:element name="Observaciones" type ="xs:string"/>
+<xs:element name="Descripcion" type ="xs:string"/>
+<xs:element name="Precio" type ="xs:double"/>
+<xs:element name="Cantidad" type ="xs:positiveInteger"/>
+
+<!--Definimos los atributos-->
+<xs:attribute name="fecha" type ="xs:date"/>
+<xs:attribute name="codigo" type ="xs:string"/>
+
+<!--Definimos los elementos complejos:Producto-->
+<xs:element name="Producto">
+
+ <xs:complexType>
+
+  <xs:sequence>
+    <xs:element ref="Descripcion"/>
+    <xs:element ref="Precio"/>
+    <xs:element ref="Cantidad"/>
+  </xs:sequence>
+
+  <xs:attribute ref="codigo"/>
+
+ </xs:complexType>
+
+</xs:element> 
+
+<!--Definimos los elementos complejos:Contenido-->
+<xs:element name="Contenido">
+
+ <xs:complexType>
+
+  <xs:sequence>
+    <xs:element ref="Producto" maxOccurs="unbounded"/>
+  </xs:sequence>
+
+ </xs:complexType>
+
+</xs:element> 
+
+<!--Definimos los elementos complejos:Ordenate-->
+<xs:element name="Ordenate">
+
+ <xs:complexType>
+
+  <xs:sequence>
+    <xs:element ref="Nombre"/>
+    <xs:element ref="Direccion"/>
+    <xs:element ref="Ciudad"/>
+    <xs:element ref="codPostal"/>
+  </xs:sequence>
+
+ </xs:complexType>
+
+</xs:element> 
+
+<!--Definimos los elementos complejos:Destino-->
+<xs:element name="Destino">
+
+ <xs:complexType>
+
+  <xs:sequence>
+    <xs:element ref="Nombre"/>
+    <xs:element ref="Direccion"/>
+    <xs:element ref="Ciudad"/>
+    <xs:element ref="codPostal"/>
+  </xs:sequence>
+
+ </xs:complexType>
+
+</xs:element> 
+
+<!--Definimos los elementos complejos:Pedido-->
+<xs:element name="Pedido">
+
+ <xs:complexType>
+
+  <xs:sequence>
+    <xs:element ref="Destino"/>
+    <xs:element ref="Ordenate"/>
+    <xs:element ref="Observaciones"/>
+    <xs:element ref="Contenido"/>
+  </xs:sequence>
+
+  <xs:attribute ref="fecha"/>
+
+ </xs:complexType>
+
+</xs:element> 
+</xs:schema>
+
+
+
+
+
+
+
+
+
+
+
+

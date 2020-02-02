@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+
+<!--Defenimos los elementos simples-->
+<xs:element name="titulo" type ="xs:string"/>
+<xs:element name="autor" type ="xs:string"/>
+<xs:element name="formato" type ="xs:string"/>
+<xs:element name="publicacion" type ="xs:string"/>
+
+<!--Definimos los atributos-->
+<xs:attribute name="tiempo" type ="xs:positiveInteger"/>
+<xs:attribute name="unidad" type ="xs:positiveInteger"/>
+<xs:attribute name="cantidad" type ="xs:double"/>
+<xs:attribute name="moneda" type ="xs:NMTOKEN" fixed="euro"/>
+<xs:attribute name="href" type ="xs:anyURI"/>
+
+
+<!--Definimos los elementos complejos:disponible-->
+<xs:element name="disponible">
+
+ <xs:complexType>
+
+  <xs:attribute ref="tiempo"/>
+  <xs:attribute ref="unidad"/>
+
+ </xs:complexType>
+
+</xs:element> 
+
+<!--Definimos los elementos complejos:precio-->
+<xs:element name="precio">
+
+ <xs:complexType>
+
+  <xs:attribute ref="cantidad"/>
+  <xs:attribute ref="moneda"/>
+
+ </xs:complexType>
+
+</xs:element> 
+
+<!--Definimos los elementos complejos:descuento-->
+<xs:element name="descuento">
+
+ <xs:complexType>
+
+  <xs:attribute ref="cantidad"/>
+
+ </xs:complexType>
+
+</xs:element> 
+
+<!--Definimos los elementos complejos:enlacelibro-->
+<xs:element name="enlacelibro">
+
+ <xs:complexType>
+
+  <xs:attribute ref="href"/>
+
+ </xs:complexType>
+
+</xs:element>
+
+<!--Definimos los elementos complejos:libro-->
+<xs:element name="libro">
+
+ <xs:complexType>
+
+  <xs:sequence>
+    <xs:element ref="titulo"/>
+    <xs:element ref="disponible"/>
+    <xs:element ref="autor"/>
+    <xs:element ref="formato"/>
+    <xs:element ref="publicacion"/>
+    <xs:element ref="precio"/>
+    <xs:element ref="descuento"/>
+    <xs:element ref="enlacelibro"/>
+  </xs:sequence>
+
+
+ </xs:complexType>
+
+</xs:element>
+</xs:schema>
+
