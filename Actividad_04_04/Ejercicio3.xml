@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<clase xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation = "Ejercicio3.xsd">
+
+<alumno DNI = "99887766X">
+
+    <nombre>Dario</nombre>
+    <apellidos>Fernández Álvarez</apellidos>
+    <nota>3.50</nota>
+    <edad>45</edad>
+    <comentario>Necesita mejorar</comentario>
+    <calle>Galiana</calle>
+    <numero>23</numero>
+    <ciudad>Áviles</ciudad>
+    <codigoPostal>33400</codigoPostal>
+
+</alumno>
+
+<alumno DNI = "0132233A">
+    <nombre>Luis</nombre>
+    <apellidos>Álvarez garcía</apellidos>
+    <nota>6.75</nota>
+    <edad>75</edad>
+    <comentario>Copió de Dario, Alfredo y Pilar</comentario>
+
+</alumno>
+
+<alumno DNI = "5556677Z">
+    <nombre>Pilar</nombre>
+    <apellidos>Rodríguez Menéndez</apellidos>
+    <nota>8.25</nota>
+    <comentario>Copió de todos</comentario>    
+
+</alumno>
+
+<alumno DNI = "66554433T">
+    <nombre>Alfredo</nombre>
+    <apellidos>Martínez González</apellidos>
+    <nota>No presentado</nota>
+    <edad>42</edad>
+    <comentario>Estudió en Universidad de Oviedo</comentario>
+    <calle>Comandante Valle</calle>
+    <numero>5</numero>
+    <ciudad>Oviedo</ciudad>
+    <codigoPostal>33021</codigoPostal>
+
+
+</alumno>
+
+
+
+
+</clase>

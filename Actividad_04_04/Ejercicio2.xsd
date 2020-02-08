@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+
+<!--Defenimos los elementos simples-->
+<xs:element name="nombre" type ="xs:string"/>
+<xs:element name="apellidos" type ="xs:string"/>
+<xs:element name="nota">
+<xs:simpleType>
+  <xs:union>
+    <xs:simpleType>
+      <xs:restriction base ="xs:decimal">
+      <xs:maxInclusive value="10"/>
+      <xs:minInclusive value="0"/>
+      <xs:fractionDigits value="2"/>
+    </xs:restriction>
+  </xs:simpleType> 
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="No presentado"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:union>
+</xs:simpleType>
+</xs:element>  
+<xs:element name="edad" type ="xs:integer"/>
+<xs:element name="comentario" type = "xs:string"/>
+
+<!--Definimos el elemento simple:nota-->
+
+
+<!-- Definimos los atributos-->
+<xs:attribute name = "DNI" type="xs:string" />
+
+<!-- Definimos los elementos complejos:alumno -->
+<xs:element name="alumno">
+
+ <xs:complexType>
+
+  <xs:sequence>
+    <xs:element ref="nombre"/>
+    <xs:element ref="apellidos"/>
+    <xs:element ref="nota"/>
+    <xs:element ref="edad" minOccurs="0"/>
+    <xs:element ref="comentario"/>
+  </xs:sequence>
+
+  <xs:attribute ref= "DNI" />
+
+ </xs:complexType>
+
+</xs:element> 
+
+<!-- Definimos los elementos complejos:clase-->
+<xs:element name="clase">
+    <xs:complexType>
+
+    <xs:sequence>
+        <xs:element ref ="alumno" maxOccurs="30" />
+    </xs:sequence>
+    </xs:complexType>
+
+</xs:element>
+
+</xs:schema>
