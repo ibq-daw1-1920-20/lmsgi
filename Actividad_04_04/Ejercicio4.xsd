@@ -3,8 +3,8 @@
 
 <!--Defenimos los elementos simples-->
 <xs:element name="base" type ="xs:integer"/>
-<xs:element name="altura" type ="xs:string"/>
-<xs:element name="radio" type ="xs:string"/>
+<xs:element name="altura" type ="xs:integer"/>
+<xs:element name="radio" type ="xs:integer"/>
 <xs:element name="nombre" type ="xs:string"/>
 
 <!--Defenimos los atributos-->
