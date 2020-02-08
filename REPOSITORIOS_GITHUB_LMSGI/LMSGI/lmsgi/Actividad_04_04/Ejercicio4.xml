@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<figuraGeometrica xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation = "Ejercicio4.xsd">
+    <figura RGB = "FFAA9B">
+        <nombre>Cuadrado</nombre>
+        <altura>10</altura>
+        <base>5</base>
+    </figura>
+    <figura RGB = "AAAA00">
+        <nombre>tringulo</nombre>
+        <altura>8</altura>
+        <base>2</base>
+    </figura>
+    <figura RGB = "AA21F2">
+        <nombre>circulo</nombre>
+        <radio>10</radio>
+    </figura>
+</figuraGeometrica>

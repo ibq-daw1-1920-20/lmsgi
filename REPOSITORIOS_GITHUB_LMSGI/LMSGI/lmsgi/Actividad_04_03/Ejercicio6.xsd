@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+<!--Defenimos los elementos simples-->
+<xs:element name="TITULO" type ="xs:string"/>
+<xs:element name="AUTOR" type ="xs:string"/>
+<xs:element name="EMAIL" type ="xs:string"/>
+<xs:element name="VERSION" type ="xs:double"/>
+<xs:element name="FECHA" type ="xs:date"/>
+<xs:element name="otros" type ="xs:string"/>
+<xs:element name="QTEXT" type ="xs:string"/>
+<xs:element name="A" type ="xs:string"/>
+
+<!--Definimos los atributos-->
+<xs:attribute name="id" type ="xs:integer"/>
+
+<!--Definimos los elementos complejos:Q-->
+<xs:element name="Q">
+
+ <xs:complexType>
+
+  <xs:sequence>
+    <xs:element ref="QTEXT"/>
+    <xs:element ref="A"/>
+  </xs:sequence>
+
+   <xs:attribute ref="id"/>
+  
+
+ </xs:complexType>
+
+</xs:element>
+
+<!--Definimos los elementos complejos:PART-->
+<xs:element name="PART">
+
+ <xs:complexType>
+
+  <xs:sequence>
+    <xs:element ref="Q" maxOccurs="unbounded"/>
+  </xs:sequence>
+
+ </xs:complexType>
+
+</xs:element> 
+
+<!--Definimos los elementos complejos:INFO-->
+<xs:element name="INFO">
+
+ <xs:complexType>
+
+  <xs:sequence>
+    <xs:element ref="TITULO"/>
+    <xs:element ref="AUTOR"/>
+    <xs:element ref="EMAIL"/>
+    <xs:element ref="VERSION"/>
+    <xs:element ref="FECHA"/>
+  </xs:sequence>
+
+ </xs:complexType>
+
+</xs:element> 
+
+<!--Definimos los elementos complejos:FAQ-->
+<xs:element name="FAQ">
+
+ <xs:complexType>
+
+  <xs:sequence>
+    <xs:element ref="INFO"/>
+    <xs:element ref="PART"/>
+  </xs:sequence>
+
+ </xs:complexType>
+
+</xs:element>
+</xs:schema>
+
+
+
+
+
+
+
+
+
+

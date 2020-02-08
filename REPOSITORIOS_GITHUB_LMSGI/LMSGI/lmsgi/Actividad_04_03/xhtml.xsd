@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+<!--Defenimos los elementos simples-->
+<xs:element name="title" type ="xs:string"/>
+
+
+<!--Definimos los atributos-->
+<xs:attribute name="http-equiv" type ="xs:string"/>
+<xs:attribute name="content" type ="xs:string"/>
+<xs:attribute name="bgcolor" type ="xs:string"/>
+
+
+<!--Definimos los elementos complejos:head-->
+<xs:element name="head">
+
+ <xs:complexType>
+
+  <xs:sequence>
+    <xs:element ref="meta"/>
+    <xs:element ref="title"/>
+  </xs:sequence>
+
+
+ </xs:complexType>
+
+</xs:element> 
+
+<!--Definimos los elementos complejos:meta-->
+<xs:element name="meta">
+
+ <xs:complexType>
+
+  <xs:attribute ref="http-equiv"/>
+  <xs:attribute ref="content"/>
+
+ </xs:complexType>
+
+</xs:element> 
+
+<!--Definimos los elementos complejos:body-->
+<xs:element name="body">
+
+ <xs:complexType>
+
+  <xs:sequence>
+    <xs:element ref="p" maxOccurs="unbounded"/>
+  </xs:sequence>
+
+  <xs:attribute ref="bgcolor"/>
+
+ </xs:complexType>
+
+</xs:element> 
+
+<!--Definimos los elementos complejos:p-->
+<xs:element name="p">
+  <xs:complexType>
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+       <!-- podemos meter atributos aquí -->
+        <xs:attribute name="align" type="xs:string"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:element>
+
+<!--Definimos los elementos complejos:html-->
+<xs:element name="html">
+
+ <xs:complexType>
+     <xs:sequence>
+        <xs:element ref="head"/>
+        <xs:element ref="body"/>
+    </xs:sequence>
+  
+
+ </xs:complexType>
+
+</xs:element>
+
+
+</xs:schema>
+
+
+
+
+
+
+
+
+
+
+
+
+
