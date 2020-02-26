@@ -1,0 +1,18 @@
+﻿body {
+    margin-left : 10px;
+    margin-right: 10px;}
+h1 {
+    border :#00FF solid 2px; 
+    padding : 10px;
+    margin-top:30px; 
+    margin-bottom:30px;}
+h2 {
+    border :#AAAAAA solid 2px;
+    padding : 5px;}
+ul {
+    border :#0f0 solid 2px; 
+    } 
+.borde {
+    margin-top:15px; 
+    margin-bottom:15px;
+}  
