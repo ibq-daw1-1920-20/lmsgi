@@ -1,0 +1,41 @@
+body{
+    background-color: grey;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:red;
+    margin-left: 20%;
+}
+ul{
+    width:20%;
+    background-color: indigo;
+}
+
+h1{
+    border: 5px solid red;
+    color: white;
+    font-family: 'Comic Sans MS';
+    word-spacing: 20px;
+    margin-right: 45%;
+    padding:5px;
+}
+
+p{
+    border: 10px solid blue ;
+    text-align: center;
+    width: 17%;
+    background-color: rgb(110, 112, 9);
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+h3{
+    font-style: italic;
+    text-transform: uppercase;
+    font-family: cursive;
+    text-align: right;
+    margin-right: 45%;
+}
+
+li{
+    border: 1px solid white;
+    padding: 1%;
+}
