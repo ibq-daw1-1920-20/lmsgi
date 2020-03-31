@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+<!-- Definimos elementos simples -->
+
+<xs:element name="NombreSucursal" type ="xs:string" />
+<xs:element name="NombreTrabajador" type ="xs:string" />
+<xs:element name="FechaPedido" type ="xs:date" />
+<xs:element name="ObservacionesPedido">
+    <xs:simpleType>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="urgente|incompleto"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:element>
+<xs:element name="PlazoRevision" type ="xs:integer" />
+<xs:element name="NumUnidades" type ="xs:integer"  />
+<xs:element name="PrecioUnidad"/>
+<xs:element name="ObservacionesArticulo" type="xs:string" />
+
+
+<!-- Definimos atributos -->
+
+<xs:attribute name = "CodPedido">
+  <xs:simpleType>
+    <xs:restriction base ="xs:string">
+      <xs:pattern value="[A-Z][0-9]{7}"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:attribute>
+
+<xs:attribute name = "Cod">
+  <xs:simpleType>
+    <xs:restriction base ="xs:string">
+      <xs:pattern value="[A-Z]{3}-[0-9]{3}"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:attribute>
+
+<!--Definimos los elementos complejos:articulo-->
+<xs:element name="Articulo">
+
+ <xs:complexType>
+
+  <xs:sequence>
+    <xs:element ref="NumUnidades"/>
+    <xs:element ref="PrecioUnidad"/>
+    <xs:element ref="ObservacionesArticulo"/>
+  </xs:sequence>
+
+  <xs:attribute ref= "Cod" />
+
+ </xs:complexType>
+
+</xs:element> 
+
+
+<!--Definimos los elementos complejos:sucursal-->
+<xs:element name="Sucursal">
+
+ <xs:complexType>
+
+  <xs:sequence>
+    <xs:element ref="NombreSucursal"/>
+    <xs:element ref="NombreTrabajador"/>
+    <xs:element ref="FechaPedido"/>
+    <xs:element ref="ObservacionesPedido"/>
+    <xs:element ref="PlazoRevision"/>
+    <xs:element ref="Articulo"/>
+  </xs:sequence>
+
+  <xs:attribute ref= "CodPedido" />
+
+ </xs:complexType>
+
+</xs:element> 
+
+
+<!--Definimos los elementos complejos:pedido-->
+<xs:element name="Pedido">
+
+ <xs:complexType>
+
+  <xs:sequence>
+    <xs:element ref="Sucursal"/>
+  </xs:sequence>
+ </xs:complexType>
+
+</xs:element> 
+
+<!-- Definimos los elementos complejos:clase-->
+<xs:element name="CarpinterosSA">
+    <xs:complexType>
+
+    <xs:sequence>
+        <xs:element ref ="Pedido" />
+    </xs:sequence>
+    </xs:complexType>
+
+</xs:element>
+
+</xs:schema>
+

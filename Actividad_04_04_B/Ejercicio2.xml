@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Explicacion[
+<!ELEMENT Explicacion (#PCDATA)>
+]>
+
+<Explicacion>
+    version="1.0" significa que este es el estándar XML este archivo.
+    encoding="utf-8" significa que el archivo se codifica utilizando la codificación UTF-8.
+</Explicacion>

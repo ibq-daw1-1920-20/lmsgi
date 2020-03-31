@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CarpinterosSA xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation = "Ejercicio1.xsd">
+
+    <Pedido>
+        <Sucursal CodPedido ="A1234567">
+            <NombreSucursal>Carpinteros Gijon</NombreSucursal>
+            <NombreTrabajador>Abrahamm Moreno</NombreTrabajador>
+            <FechaPedido>2020-03-31</FechaPedido>
+            <ObservacionesPedido>urgente</ObservacionesPedido>
+            <PlazoRevision>15</PlazoRevision>
+            <Articulo Cod="ABC-123">
+                <NumUnidades>100</NumUnidades>
+                <PrecioUnidad>5</PrecioUnidad>
+                <ObservacionesArticulo />
+            </Articulo>
+
+        </Sucursal>
+    </Pedido>
+
+</CarpinterosSA>
+
