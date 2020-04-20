@@ -1,0 +1,67 @@
+*{
+    font: 1em, Arial, Helvetica, sans-serif;
+
+}
+
+h1{
+    color: #45B39D ;
+}
+
+p strong{
+    color: red;
+}
+
+.destacado{
+    color: #F5B041;
+}
+
+h2{
+    color: blue;
+}
+
+a{
+    color: red;
+}
+a em{
+    color: blue;
+}
+
+span.especial{
+    color: purple;
+}
+
+table, th, td, tr{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: .2em;
+}
+
+th.especial{
+    color: #F5B041;
+   
+}
+
+th{
+    color: red;
+   
+}
+
+td{ 
+    color: green;
+}
+td strong{
+    color: #F5B041;
+}
+
+#adicional{
+    color: #827717;
+}
+
+span#especial{
+    color: #FF33FF;
+}
+
+div a{
+    color: green;
+
+}

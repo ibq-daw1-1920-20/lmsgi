@@ -1,0 +1,80 @@
+﻿body{font-family: Arial, Helvetica, sans-serif;
+
+
+}
+nav{
+    
+    border: 1px solid lightgrey;
+    float:  left;
+    position : top;
+    
+    
+}
+#contenidos{
+    
+    
+  
+    border: 1px solid lightgrey;
+}
+aside{
+
+    float: right;
+    border: 1px solid lightgrey;
+   
+}
+
+header{
+
+    
+    border: 1px solid lightgrey;
+    
+
+}
+
+footer{
+    clear: both;
+}
+h1{ 
+    font-weight: normal;
+}
+
+nav ul li{
+    
+    
+    
+
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+article h4{
+    color: green;
+}
+article h3{
+    color: orange;
+    font-weight: lighter;
+}
+strong{
+    color: orange;
+    text-transform: uppercase;
+    float: right;
+    padding-right: 25%;
+    
+}
+#aulas{
+    background-color: darkgray;
+    clear:both;
+}
+
+#subir{
+    float: right;
+    background-color: darkgray;
+}

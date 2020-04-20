@@ -1,0 +1,136 @@
+html{
+    margin: 1em 3em;
+    background-color: rgb(212, 212, 212);
+}
+
+body{
+    background-color: white;
+    border: 1px solid grey;
+    font-size: .8em;
+}
+
+h2{
+    margin-left: 2.5em ;
+}
+
+
+li:hover{
+    background-color: #FF9 ;
+}
+
+ul li p.ayuda {
+    display: none;
+}
+
+ul{
+    list-style: none;
+    width: 95%;
+    overflow: hidden;
+    
+}
+
+input:focus{
+   border: 4px solid #E6B700;
+}
+
+.izquierda{
+    float: left;
+}
+
+.derecha{
+    float: left;   
+}
+
+ul li.botones{
+    clear: both;
+    text-align: right;
+
+}
+
+span{
+    float: left;
+    clear: left;
+    margin-bottom: 0.5em;
+}
+
+ul li div span label {
+    display: block;
+}
+
+li{
+    border-top: 1px solid grey;
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+ul li:hover p.ayuda {
+    display: block;
+    width: 200px;
+    float: right;
+    overflow: hidden;
+
+}
+
+label.titulo {
+    float:left;
+    text-align: left;
+    font-weight: bold;
+
+}
+
+span.requerido {
+    font-weight: bold;
+    color: red;
+    float: right;
+  }
+
+#nombre{
+    width: 125%;
+}
+
+#apellido1{
+    width: 175%;
+}
+
+#apellido2{
+    width: 175%;
+}
+
+#direccion{
+    width: 150%;
+}
+
+#codigopostal{
+    width: 75%;
+}
+
+#municipio{
+    width: 125%;
+}
+
+#pais{
+    width: 250%;
+}
+
+#email{
+    width: 175%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
