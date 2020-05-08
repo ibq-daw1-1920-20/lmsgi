@@ -1,0 +1,42 @@
+body{
+    background-color: #202340;
+    color: white;
+    height: 100%;
+    margin: 0%;
+}
+
+a{
+    color: white;
+}
+
+#foto{
+    float:left;
+  
+}
+
+span{
+    font-weight: normal;
+}
+ 
+h1{
+    font-size: 50px;
+
+}
+
+div{
+    float: left;
+    
+    
+}
+footer{
+    height: 150px;
+    clear: both;
+    background-color: blue;
+}
+
+footer a{
+    width: 33%;
+    float: left;
+    margin: 0%;
+    text-align: center;
+}
